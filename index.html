@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans transition-colors duration-300">
+  <div class="max-w-4xl mx-auto p-6">
+
+    <!-- Dark mode toggle button -->
+    <div class="flex justify-end">
+      <button id="toggleDark" class="mb-4 text-sm px-4 py-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-full shadow">
+        Toggle Dark Mode
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold">Your Name</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300">Frontend Developer · Designer · Problem Solver</p>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">📍 Your City · 📧 your.email@example.com · 💼 linkedin.com/in/yourname · 🖥 github.com/yourname</p>
+    </header>
+
+    <!-- Sections (Summary, Skills, Experience, etc.) remain unchanged -->
+    <!-- Example of one section updated for dark mode below -->
+
+    <!-- Section: Summary -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2 border-b pb-1 border-gray-300 dark:border-gray-700">Professional Summary</h2>
+      <p class="leading-relaxed">
+        Passionate and results-driven web developer with 5+ years of experience building responsive, user-friendly web applications using React, Tailwind, and modern tools.
+      </p>
+    </section>
+
+    <!-- Add other sections like Skills, Experience, Education here with same dark class tweaks -->
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-400 mt-10">
+      &copy; 2025 Senaathipathy. Built with ❤️
+    </footer>
+  </div>
+
+  <!-- Toggle Script -->
+  <script>
+    const toggle = document.getElementById('toggleDark');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
